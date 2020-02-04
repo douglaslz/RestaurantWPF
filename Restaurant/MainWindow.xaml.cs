@@ -28,6 +28,14 @@ namespace Restaurant
         int numberitem = 1;
         //Item seleted on the datagrid
         Food a;
+        //Tax general
+        static decimal tax = 13;
+        //tax for system use
+        decimal taxcal = (tax / 100) +1;
+        //Subtotal of the bill
+        decimal subtotal = 0;
+        //Total of the bill
+        decimal total = 0;
 
         public MainWindow()
         {
@@ -125,6 +133,8 @@ namespace Restaurant
                     order.Add(new Food() {Id = numberitem, Category = elemento.Category, Name = elemento.Name, Price = elemento.Price });
                     //Increment counter of the number of items in order
                     numberitem++;
+                    //Add to subtotal
+                    subtotal = subtotal + elemento.Price;
 
                 }
 
@@ -138,8 +148,10 @@ namespace Restaurant
         private void datagrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
              //Send item selected to the variable a            
-             a = dataGrid.SelectedItem as Food;  
+             a = dataGrid.SelectedItem as Food;
             
+
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -158,8 +170,11 @@ namespace Restaurant
                     {
                         //Removing selected item
                         order.Remove(item);
+                        //Subtract price item from subtotal
+                        subtotal = subtotal - a.Price;
                         //Loading data  in datagrid
                         loadItemDataGrid();
+                        
 
                     }
                         
@@ -172,6 +187,7 @@ namespace Restaurant
             //Cleaning all the fields
             order.Clear();
             loadItemDataGrid();
+            numberitem = 1;
         }
 
         public void loadItemDataGrid()
@@ -180,6 +196,10 @@ namespace Restaurant
             dataGrid.ItemsSource = null;
             //Introduce data in the list order to datagrid
             dataGrid.ItemsSource = order;
+            //Show in the textbox total and sub total
+            textBox.Text = subtotal.ToString();
+            total = subtotal * taxcal;
+            textBox_Copy.Text = total.ToString();
         }
     }
 }

@@ -13,9 +13,5 @@ namespace Restaurant
         public string Name { get; set; }
         public decimal Price { get; set; }
         
-        public static void returnPrice(string name)
-        {
-            //return Price;
-        }
     }
 }

@@ -7,32 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="800">
     <Grid>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="54,145,0,0" VerticalAlignment="Top" Width="140">
-            
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="40,97,0,0" VerticalAlignment="Top" Width="140">
+
         </ComboBox>
-        <Label x:Name="label" Content="Beverage" HorizontalAlignment="Left" Margin="54,85,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="comboBox_Copy" HorizontalAlignment="Left" Margin="224,145,0,0" VerticalAlignment="Top" Width="140">
-            
+        <Label x:Name="label" Content="Beverage" HorizontalAlignment="Left" Margin="40,37,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="comboBox_Copy" HorizontalAlignment="Left" Margin="210,97,0,0" VerticalAlignment="Top" Width="140">
+
         </ComboBox>
-        <Label x:Name="label_Copy" Content="Appetizer" HorizontalAlignment="Left" Margin="224,85,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="comboBox_Copy1" HorizontalAlignment="Left" Margin="402,145,0,0" VerticalAlignment="Top" Width="140">
+        <Label x:Name="label_Copy" Content="Appetizer" HorizontalAlignment="Left" Margin="210,37,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="comboBox_Copy1" HorizontalAlignment="Left" Margin="388,97,0,0" VerticalAlignment="Top" Width="140">
         </ComboBox>
-        <Label x:Name="label_Copy1" Content="Main Course " HorizontalAlignment="Left" Margin="402,85,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="comboBox_Copy2" HorizontalAlignment="Left" Margin="574,145,0,0" VerticalAlignment="Top" Width="140">
-            
+        <Label x:Name="label_Copy1" Content="Main Course " HorizontalAlignment="Left" Margin="388,37,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="comboBox_Copy2" HorizontalAlignment="Left" Margin="560,97,0,0" VerticalAlignment="Top" Width="140">
+
         </ComboBox>
-        <Label x:Name="label_Copy2" Content="Dessert" HorizontalAlignment="Left" Margin="574,85,0,0" VerticalAlignment="Top" Width="140"/>
-        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="55,180,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="button_Click"/>
-        <Button x:Name="button_Copy" Content="Add" HorizontalAlignment="Left" Margin="225,180,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="button_Copy_Click"/>
-        <Button x:Name="button_Copy1" Content="Add" HorizontalAlignment="Left" Margin="403,180,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="button_Copy1_Click"/>
-        <Button x:Name="button_Copy2" Content="Add" HorizontalAlignment="Left" Margin="576,180,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="button_Copy2_Click"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="245" Margin="55,224,0,0" VerticalAlignment="Top" Width="600" MouseDoubleClick="datagrid_MouseDoubleClick" />
+        <Label x:Name="label_Copy2" Content="Dessert" HorizontalAlignment="Left" Margin="560,37,0,0" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="41,132,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="Add" HorizontalAlignment="Left" Margin="211,132,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="button_Copy_Click"/>
+        <Button x:Name="button_Copy1" Content="Add" HorizontalAlignment="Left" Margin="389,132,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="button_Copy1_Click"/>
+        <Button x:Name="button_Copy2" Content="Add" HorizontalAlignment="Left" Margin="562,132,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="button_Copy2_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="245" Margin="41,176,0,0" VerticalAlignment="Top" Width="600" MouseDoubleClick="datagrid_MouseDoubleClick" />
 
 
 
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="520,537,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button1" Content="Remove &#xD;&#xA;ITem" HorizontalAlignment="Left" Margin="685,229,0,0" VerticalAlignment="Top" Width="75" Height="85" Click="button1_Click"/>
-        <Button x:Name="button2" Content="Clear&#xD;&#xA;" HorizontalAlignment="Left" Margin="685,365,0,0" VerticalAlignment="Top" Width="75" Height="90" Click="button2_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="139,487,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button1" Content="Remove &#xD;&#xA;ITem" HorizontalAlignment="Left" Margin="671,181,0,0" VerticalAlignment="Top" Width="75" Height="85" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Clear&#xD;&#xA;" HorizontalAlignment="Left" Margin="671,317,0,0" VerticalAlignment="Top" Width="75" Height="90" Click="button2_Click"/>
+        <Label x:Name="label1" Content="Sub-Total" HorizontalAlignment="Left" Margin="61,484,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="421,487,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1_Copy" Content="Total" HorizontalAlignment="Left" Margin="316,481,0,0" VerticalAlignment="Top" Width="80"/>
 
     </Grid>
 </Window>
